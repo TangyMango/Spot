@@ -3,6 +3,7 @@ import {View, TouchableOpacity, Text, TextInput, Button, StyleSheet, Alert, Imag
 import {NavigationContainer } from '@react-navigation/native';
 import {createStackNavigator } from '@react-navigation/stack';
 import Home from './Home';
+import DetalleSalon from './DetalleSalon';
 
 const Stack = createStackNavigator();
 
@@ -124,6 +125,7 @@ const App = () => {
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="DetalleSalon" component={DetalleSalon} />
       </Stack.Navigator>
     </NavigationContainer>
   );
